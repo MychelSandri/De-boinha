@@ -1,0 +1,96 @@
+/*****************************TAG ELEMENTS****************************/
+body{
+  background-color: #C2DED1;
+  margin:0;
+  text-align: center;
+  font-family: 'Joan', serif;
+  /**font-family: 'Alegreya', serif;**/
+}
+
+h1{
+  margin:0 auto 0 auto;
+  font-family: 'Cinzel Decorative', cursive;
+  /*font-family: 'Cinzel', serif;*/
+  /*font-family: 'Redressed', cursive;*/
+  /*font-family: 'Sacramento', cursive;*/
+  font-size: 4.5rem;
+  color:#354259
+}
+
+h2{
+  font-size: 2.5rem;
+  color: #354259;
+}
+
+/*****************************CLASS ELEMENTS************************/
+
+#cabecalho{
+  background-color: #C2DED1;
+}
+
+#fofo{
+  color: #354259;
+}
+
+#menu{
+  background-color: #354259;
+}
+
+#HARD-SKILLS{
+  padding: 2.5% 0 0 0;
+}
+
+#text-hard{
+  padding: 2.5% 0 0 0;
+}
+
+.fundo-index{
+  background-color: #C2DED1;
+}
+
+.abertura{
+  text-align: center;
+  text-indent: 30px;
+}
+
+.coracao{
+  color: red;
+}
+
+.letras-menu{
+  color: #C2DED1;
+}
+
+.h-skill{
+  text-align: justify;
+  text-indent: 30px;
+  padding: 0 5% 0 5%;
+}
+
+.top-container{
+  background-color: #0268b0;
+  position: relative;
+  padding-top: 100px;
+  border-bottom: solid 2px;
+  border-color: #423F3E;
+}
+
+.middle-container{
+  background-color: #CDC2AE;
+}
+
+.bottom-container{
+  background-color: #757575;
+  border-color: #423F3E;
+  border-top: solid 2px;
+}
+
+.logo{
+  height: 200px;
+}
+
+.mensagem-final{
+  margin: 0 0 0 0;
+  padding-top: 16px;
+  font-size: 13px;
+}
