@@ -1,0 +1,111 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Cartas</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+
+
+</head>
+<body>
+
+  <script>
+    var usuarioLogado = sessionStorage.getItem('usuarioLogado');
+
+    if (!usuarioLogado) {
+      window.location = "ENDEREÇO PARA ONDE VOCÊ QUER REDIRECIONAR"
+    }
+  </script>
+
+<section>
+    <div class="row">
+       <h1> Nossas cartinhas.</h1>
+    </div>
+  </section>
+
+  <section  id="menu">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="inicial.html"> <span class="coracao">❤</span> <span class="letras-menu"> De boinha. </span> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="fotos.html"> <span class="letras-menu"> Fotinhos </span> </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="destinos.html"> <span class="letras-menu"> Destinos </span> </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="cartas.html"> <span class="letras-menu"> Cartinhas de amor </span> </a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+  </section>
+
+  <div class="corpo-da-pagina">
+    <div class="apresentacao">
+  <!--    <img class="profile-pic"src="images/profile.png" alt="profile-img"> -->
+      <h2 class="ola">Simplesmte porque eu amo escrever e ainda mais me declarar para você...</h2>
+      <p class="description">
+      Confesso que achei meio difícil organizar essa página em específico, como poderia classificar as nossas cartas e nossas frases fofas? Até o momento só fiz uma
+      e não sei sobre o que serão as próximas, então acho que a melhor forma no momento seja fazer um link para cada carta individualmente e colocar
+      uma descrição do dia que ela foi entregue... E também podemos adicionar uma seção para as frases fofas.
+      </p>
+      <p class="description">
+        Ah, e eu imagino que eu vá receber cartas suas também, então elas vão vir parar aqui também, obviamente...
+      </p>
+    </div>
+
+    <hr>
+  <h2> Cartas... </h2>
+    <div class="skills">
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6">
+          <p>
+            <h3> Pedido de namoro... </h3>
+            <a href="carta001.html"><img id="cartas" src="imagens/carta-pedido-namoro.png" alt="carta-pedido-namoro.img" height="200px"></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+      <hr>
+
+      <h2> Frases </h2>
+      <div class="frases">
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <p>
+              "Tenho muito orgulho de ti só pra dizer, obrigada por me aguentar
+              todos os dias, e sempre estar do meu, saiba que eu te amo dms, sempre
+              vou estar te ajudando, em qualquer situação, na saúde ou na doença, na felicidade
+              ou nos esfermos..." - <b>Aniely, 04 de setembro de 2022.</b>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <p>
+              "Aproveite cada momento e cada dia, viva com intensidade, momentos vem e vão
+              e alguns muitas vezes não voltam, acredite em você, porque eu acredito, de o seu melhor
+              sempre." - <b>Aniely, 13 de junho de 2022.</b>
+            </p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

@@ -20,43 +20,66 @@
 
 </head>
 <body>
-  <script language=javascript>
-  senha = 'Mychel';
-  senhadig = prompt("Digite a senha","")
-  if (senha != senhadig){
-  alert('Acesso negado!!');
-  top.location.href='erro.html';
-  }
-  </script>
   <section>
     <div class="abertura">
       <h2> Oieee!! </h2>
 
       <div class="row">
-        <div class="col-md-8" id="text-hard">
-          <p class="h-skill"> Espero que esteja tudo bem contigo, se está lendo isso, é porque tudo correu bem...
+        <div class="col-md-12" id="text-hard">
+          <p class="texto-padrao"> Espero que esteja tudo bem contigo, se está lendo isso, é porque tudo correu bem...
           E com correu tudo bem quero dizer que você tem um anel no seu dedinho, e somos namorados oficialmente...
           </p>
-          <p class="h-skill">
+          <p class="texto-padrao">
             Eu tive muitas ideias de o que fazer para nós neste dia, e pensando um pouco, esse é o nosso primeiro dia como
             namorados, primeiro de MUITOS e obviamente este dia vai ser super especial e único. Mas eu quero que tenhamos muitos outros
             dias especiais... Por isso criei esse espaço somente para nós, para guardarmos nossos momentos de uma forma um pouquinho
            diferente além de nossas memórias.
           </p>
-          <p class="h-skill">
+          <p class="texto-padrao">
             Quando eu digo nosso, é porque é nosso mesmo, eu criei da melhor forma que eu imaginei, mas daqui pra frente
             vamos arrumar do nosso jeitinho...
-            Já falei demais... Espero que goste.
+            Espero que goste.
           </p>
         </div>
-        <div class="col-md-4">
-          <img class="hard-skills" src="images/hard-skill2.png" alt="hard-skill.img" width="250px">
-        </div>
-
       </div>
-      Olá, não falarei nada aqui... espero que goste do que fiz pra gente...
   </section>
-<a href="inicial.html">Clique para acessar!</a>
+  <form class="form">
+    <div class="card">
+      <div class="card-top">
+        <img class="imglogin" src="imagens/login.png" alt="login.img">
+        <h2> Caixinha virtual Aniely & Mychel </h2>
+      </div>
+
+      <div class="card-group">
+        <label>Login</label>
+        <input type="text" name="login" id="login" value="" placeholder="Digite seu login">
+      </div>
+
+      <div class="card-group">
+        <label>Senha</label>
+        <input type="password" name="senha" id="senha" value="" placeholder="Senha">
+      </div>
+
+      <div class="card-group btn">
+        <button type="submit" name="acessar" onclick="logar(); return false"> ACESSAR </button>
+      </div>
+    </div>
+  </form>
+
+<script>
+    function logar(){
+      var login = document.getElementById('login').value;
+      var senha = document.getElementById('senha').value;
+
+      if (login == "Aniely" && senha == "Deboinha.") {
+        alert('Vamos lá!');
+        location.href = "inicial.html";
+      } else {
+          alert('Usuário ou senha inválidos');
+      }
+    }
+    sessionStorage.setItem('usuarioLogado', '1');
+</script>
 
 </body>
 </html>

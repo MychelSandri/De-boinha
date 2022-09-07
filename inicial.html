@@ -22,6 +22,14 @@
 </head>
 <body>
 
+<script>
+  var usuarioLogado = sessionStorage.getItem('usuarioLogado');
+
+  if (!usuarioLogado) {
+    window.location = "ENDEREÇO PARA ONDE VOCÊ QUER REDIRECIONAR"
+  }
+</script>
+
 <section>
     <div class="row">
        <h1> <span class="coracao">❤</span> De boinha. <span class="coracao">❤</span> </h1>
@@ -33,30 +41,27 @@
 
   <section  id="menu">
     <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href=""> <span class="coracao">❤</span> <span class="letras-menu"> De boinha. </span> </a>
+      <a class="navbar-brand" href="inicial.html"> <span class="coracao">❤</span> <span class="letras-menu"> De boinha. </span> </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                  <a class="nav-link" href=""> <span class="letras-menu"> Não sei ainda </span> </a>
+                  <a class="nav-link" href="fotos.html"> <span class="letras-menu"> Fotinhos </span> </a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href=""> <span class="letras-menu"> Fotinhos </span> </a>
+                  <a class="nav-link" href="destinos.html"> <span class="letras-menu"> Destinos </span> </a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href=""> <span class="letras-menu"> Destinos </span> </a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href=""> <span class="letras-menu"> Cartinhas de amor </span> </a>
+                  <a class="nav-link" href="cartas.html"> <span class="letras-menu"> Cartinhas de amor </span> </a>
               </li>
           </ul>
       </div>
     </nav>
   </section>
 
-  <div class="middle-container">
+  <div class="corpo-da-pagina">
     <div class="apresentacao">
   <!--    <img class="profile-pic"src="images/profile.png" alt="profile-img"> -->
       <h2 class="ola">Olá meu amor</h2>
@@ -72,11 +77,11 @@
       </p>
       <p class="description">
         Presentes físicos ou lembranças físicas são muito boas, você poder pegar sua flor de origami e associar com nosso
-        primeiro piquenique por exemplo, porém você não pode por exemplo estar na sua aula, sentir saudade deste dia e abrir sua caixa surpresa
+        primeiro piquenique por exemplo, porém você não pode estar na sua aula, sentir saudade deste dia e abrir a nossa caixinha
         porque ela nem cabe na sua mochila... De uma forma análoga, temos os nossos
         momentos juntos, não vamos estar 100% dos nosso tempo juntos fisicamente, isso é impossível, mas ainda assim sempre
         estaremos juntos, seja por uma mensagem, por uma ligação, seja com um desabafo ou com uma notícia muito boa, pois sempre
-        que precisarmos um do outro estaremos lá para ajudar. A questão é,todos nossos momentos estão em
+        que precisarmos um do outro estaremos lá para ajudar. A questão é, todos nossos momentos estão em
         nossas memórias onde quer que a gente esteja.
       </p>
       <p class="description">
@@ -99,22 +104,24 @@
       </div>
       <div class="row">
         <div class="col-md-8" id="text-hard">
-          <p class="h-skill">
+          <p class="texto-padrao">
             A página inicial é essa aqui, ela tem somente a apresentação aqui em cima sobre porque fiz isso
           e essa explicação de tudo que temos aqui...
           </p>
 
-          <p class="h-skill">
+          <p class="texto-padrao">
             Para melhor organização, adicionei um menu ali em cima, lá você pode acessar outras seções que eu criei, vamos falar
             um pouco sobre elas..
           </p>
         </div>
         <div class="col-md-4">
-          <img class="hard-skills" src="imagens/pagina-inicial.png" alt="hard-skill.img" width="250px">
+          <a href="inicial.html"><img src="imagens/pagina-inicial.png" alt="casinha.img" width="250px"></a>
         </div>
-
       </div>
-      <div class="row" id="HARD-SKILLS">
+
+      <hr>
+
+      <div class="row" id="padding-divisao">
         <div class="col-md-8">
           <h3></h3>
         </div>
@@ -124,110 +131,56 @@
       </div>
       <div class="row">
         <div class="col-md-4">
-          <img class="hard-skills" src="imagens/date2-nos.jpg" alt="hard-skill.img" width="200px">
+          <a href="fotos.html"><img src="imagens/date3-2.jpg" alt="date3-2.img" width="200px"></a>
         </div>
         <div class="col-md-8" id="text-hard">
-          <p class="h-skill">
+          <p class="texto-padrao">
             A ideia inicial para essa página foi colocarmos nossas fotos juntos, mas eu penso que podemos por fotos de
             nossos momentos, não necessariamente apenas fotos de casal. Por isso aqui vai encontrar fotos nossas, foto suas, fotos minhas,
             fotos dos buquês, das comidas dos piqueniques, e tudo que quisermos.
           </p>
         </div>
-
       </div>
 
-      <div class="row" id="HARD-SKILLS">
+      <hr>
+
+      <div class="row" id="padding-divisao">
         <div class="col-md-4">
           <h3>Destinos</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-md-8" id="text-hard">
-          <p class="h-skill">
+          <p class="texto-padrao">
             Ainda temos muito tempo juntos e acho justo conhecermos o mundo todo juntos, e essa parte é exclusiva para lugares
-            que já fomos visitar ou que queremos visitar.
+            que já fomos visitar ou que queremos visitar. Desde nossos piqueniques em Laranjeiras e em Coronel Vivida, até nossas viagens pelo mundo a fora.
           </p>
         </div>
         <div class="col-md-4">
-          <img class="hard-skills" src="imagens/mapa.png" alt="hard-skill.img" width="250px">
+          <a href="destinos.html"><img src="imagens/mapa.png" alt="mapa.img" width="250px"></a>
         </div>
-
       </div>
 
-      <div class="skill-row">
-        <table>
-          <tr>
-            <td><img class="soft-skills" src="images/soft-skill2.png" alt="soft-skill.img"width="250px"></td>
-            <td class="soft-skills-text"><h3>Soft Skills</h3>
-            <p class="">Como Soft-Skills, posso destacar o trabalho em equipe, assim como coordenação de equipes quando necessário,
-             facilidade de trabalhar sob pressão pelo fato de eu ser uma pessoa calma. Me considero também uma pessoa organizada e com
-             uma visão ampla das atividades que estou envolvido.</p></td>
-          </tr>
-        </table>
+      <hr>
+
+      <div class="row" id="padding-divisao">
+        <div class="col-md-8">
+          <h3></h3>
+        </div>
+        <div class="col-md-4">
+          <h3>Cartinhas de amor</h3>
+        </div>
       </div>
-    </div>
-
-    <hr>
-
-    <div>
-      <h2>Experiências</h2>
-
-        <p class="cabeca-exp"><strong> Como experiências, não considero apenas as experiências de âmbito profissional, mas sim momentos de minha vida. </strong></p>
-
-        <table class="exp">
-          <tr>
-            <td class="exp-text-left"> Uma das minhas experiências mais marcantes foi poder participar do <strong>Projeto Rondon</strong> como voluntário no ano de 2019, foram desenvolvidas atividades na cidade de Imbaú, no interior do Paraná,
-            essas atividades, principalmente oficinas sobre determinados temas, foram aplicadas para os mais variados públicos, desde realizar um dia de brincadeiras com crianças, até a realização de aula de pintura
-            para um grupo de idosos.
-            <p>Para além das oficinas, o ponto alto de nossa operação foi a revitalização da biblioteca municipal.</p>
-            </td>
-            <td>
-              <img src="images/soft-skill2.png" alt="exp.jpg" width="250px">
-            </td>
-          </tr>
-        </table>
-
-        <table class="exp">
-          <tr>
-            <td>
-              <img src="images/skills2.png" alt="biblioteca.jpg" width="250px">
-            </td>
-            <td class="exp-text-right"> Entre minhas experiências não poderia deixar de listar o <strong>Escotismo</strong>, que não é apenas uma experiência, mas sim parte da minha vida nos últimos 15 anos. Participei de todos os ramos do movimento escoteiro,
-              no Grupo Escoteiro Tupinambá, em minha cidade natal.
-              <p>Dentro do escotismo tive muitos momentos divertidos e fiz amizades que levarei para toda a minha vida, mas além disso me tornou uma pessoa melhor, o escotismo
-              possibilita que o jovem se desenvolva na vida em conjunto com outras pessoas, o que me ajuda com trabalhos em equipe. A liderança é algo que sempre está sendo vivenciada dentro do escotismo, principalmente a liderança
-              feita pelos próprios jovens, e isso também me ajudou a ser melhor com gestão de equipes e projetos em minha vida.
-              </p>
-            </td>
-          </tr>
-        </table>
-
-    </div>
-
-    <hr>
-
-    <div class="Hobbies">
-      <h2>Hobbies</h2>
-        A lista de hobbies é um tanto quanto extensa, inclusive pelo fato que hobbies mudam, surgem novos e antigos deixam de ser praticados,
-
-    </div>
-
-  </div>
-
-  <div class="bottom-container">
-    <p class="mensagem-final">Este é um site pessoal desenvolvido por mim mesmo, o principal objetivo é apresentar meus conhecimentos, habilidades, etc; de uma forma
-    organizada, elegante e de fácil acesso, além de ser uma forma mais interativa do que o tradicional currículo.</p>
-    <p class="mensagem-final">Meu site está em constante processo de melhorias e atualizações, portanto sinta-se a vontade para me enviar sua sugestão ou comentário
-    por qualquer uma das minhas formas de contato informadas.
-    </p>
-    <h2>Contato</h2>
-    <a class="btn" href="mailto:mychelsan@gmail.com">Enviar E-mail</a>
-    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
-    <a class="footer-link" href="https://twitter.com/">Twitter</a>
-    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
-    <p>© Mychel Sandri.</p>
-  </div>
-
-
+      <div class="row">
+        <div class="col-md-4">
+          <a href="cartas.html"><img src="imagens/carta.png" alt="cartas.img" width="200px"></a>
+        </div>
+        <div class="col-md-8" id="text-hard">
+          <p class="texto-padrao">
+            Não somente para nossas cartas feitas de um para o outro, mas também para deixarmos mensagens nossas, frases bonitas, digamos que a parte mais fofinha
+            do nosso espaço... Se sinta livre para adicionar o que achar bonito e puro de coração.
+          </p>
+        </div>
+      </div>
 </body>
 </html>
