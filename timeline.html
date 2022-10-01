@@ -1,0 +1,167 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Nossos momentos.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Joan&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Cinzel+Decorative&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+
+
+</head>
+<body>
+
+<script>
+  var usuarioLogado = sessionStorage.getItem('usuarioLogado');
+
+  if (!usuarioLogado) {
+    window.location = "ENDEREÇO PARA ONDE VOCÊ QUER REDIRECIONAR"
+  }
+</script>
+
+<section>
+    <div class="row">
+       <h1> <span class="coracao">❤</span> De boinha. <span class="coracao">❤</span> </h1>
+    </div>
+    <div class="row">
+      <h2 id="fofo"> Alguns pontos de nossa história... </h2>
+    </div>
+  </section>
+
+  <section  id="menu">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="inicial.html"> <span class="coracao">❤</span> <span class="letras-menu"> De boinha. </span> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="fotos.html"> <span class="letras-menu"> Fotinhos </span> </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="destinos.html"> <span class="letras-menu"> Destinos </span> </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="cartas.html"> <span class="letras-menu"> Cartinhas de amor </span> </a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="timeline.html"> <span class="letras-menu"> Linha do tempo </span> </a>
+              </li>
+          </ul>
+      </div>
+    </nav>
+  </section>
+
+  <div class="linha-tempo">
+    <div class="corpo-carta">
+      <div class="row">
+        <div class="col-lg-4 col-md-3 col-sm-1">
+
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-10">
+          <div class="main-container">
+                  <!-- event 1st of timeline -->
+                  <div class="text-wrapper left">
+                      <!-- all text content of timeline -->
+                      <div class="content">
+                          <h3>20 de abril de 2022</h3>
+                          <p>Primeira conversa</p>
+                          <p>
+                            <img class="img-timeline"src="imagens\timeline\primeira-conversa.jpg" alt="primeira conversa">
+                          </p>
+                      </div>
+                  </div>
+                  <!-- event 1st of timeline -->
+                  <div class="text-wrapper right">
+                      <!-- all text content of timeline -->
+                      <div class="content">
+                          <h3>16 de julho de 2022</h3>
+                          <p>Primeiro encontro</p>
+                          <p>
+                            <img class="img-timeline"src="imagens\timeline\primeiro-encontro.jpg" alt="primeiro encontro">
+                          </p>
+                      </div>
+                  </div>
+                  <div class="text-wrapper left">
+                      <!-- all text content of timeline -->
+                      <div class="content">
+                          <h3>30 de julho de 2022</h3>
+                          <p>Conheci os pais dela</p>
+                          <p>
+                            <img class="img-timeline"src="imagens\timeline\date2-any.jpg" alt="date2-any">
+                          </p>
+                      </div>
+                  </div>
+                  <!-- event 1st of timeline -->
+                  <div class="text-wrapper right">
+                      <!-- all text content of timeline -->
+                      <div class="content">
+                          <h3>27 de agosto de 2022</h3>
+                          <p>Primeiro beijo</p>
+                          <p>
+                            <img class="img-timeline"src="imagens\timeline\date3-2.jpg" alt="date3-2">
+                          </p>
+                      </div>
+                  </div>
+                  <div class="text-wrapper left">
+                      <!-- all text content of timeline -->
+                      <div class="content">
+                          <h3>03 de setembro de 2022</h3>
+                          <p>Primeiro "Eu te amo"</p>
+                          <p>
+                            <img class="img-timeline"src="imagens\timeline\eu-te-amo.jpg" alt="eu te amo">
+                          </p>
+                      </div>
+                  </div>
+                  <!-- event 1st of timeline -->
+                  <div class="text-wrapper right">
+                      <!-- all text content of timeline -->
+                      <div class="content">
+                          <h3>07 de setembro de 2022</h3>
+                          <p>Pedido de namoro</p>
+                          <p>
+                            <img class="img-timeline"src="imagens\timeline\alianca-na-mao.jpeg" alt="pedido de namoro">
+                          </p>
+                      </div>
+                  </div>
+                  <div class="text-wrapper left">
+                      <!-- all text content of timeline -->
+                      <div class="content">
+                          <h3>18 de setembro de 2022</h3>
+                          <p>Conheci os pais dele</p>
+                          <p>
+                            <img class="img-timeline"src="imagens\timeline\Date5-008.jpg" alt="Date5-008">
+                          </p>
+                      </div>
+                  </div>
+                  <div class="text-wrapper right">
+                      <!-- all text content of timeline -->
+                      <div class="content">
+                          <h3>23 de setembro de 2022</h3>
+                          <p>Ele dormiu na minha casa</p>
+                          <p>
+                            <img class="img-timeline"src="imagens\timeline\dormi-la.jpg" alt="dormi-la">
+                          </p>
+                      </div>
+                  </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-1">
+        </div>
+      </div>
+
+  </div>
+</body>
+</html>
